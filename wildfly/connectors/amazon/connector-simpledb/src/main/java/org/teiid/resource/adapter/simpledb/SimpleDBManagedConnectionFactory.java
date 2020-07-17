@@ -44,7 +44,7 @@ public class SimpleDBManagedConnectionFactory extends BasicManagedConnectionFact
     }
 
     private String accessKey;
-    private String secretAccessKey;
+    private String secretKey;
 
     @Override
     public BasicConnectionFactory<ResourceConnection> createConnectionFactory() throws ResourceException {
@@ -72,12 +72,12 @@ public class SimpleDBManagedConnectionFactory extends BasicManagedConnectionFact
     }
 
     @Override
-    public String getSecretAccessKey() {
-        return secretAccessKey;
+    public String getSecretKey() {
+        return secretKey;
     }
 
-    public void setSecretAccessKey(String secretAccessKey) {
-        this.secretAccessKey = secretAccessKey;
+    public void setSecretKey(String secretKey) {
+        this.secretKey = secretKey;
     }
 
     @Override
@@ -94,6 +94,6 @@ public class SimpleDBManagedConnectionFactory extends BasicManagedConnectionFact
         }
         SimpleDBManagedConnectionFactory other = (SimpleDBManagedConnectionFactory) obj;
         return Objects.equals(accessKey, other.accessKey)
-                && Objects.equals(secretAccessKey, other.secretAccessKey);
+                && Objects.equals(secretKey, other.secretKey);
     }
 }

@@ -14,8 +14,8 @@
                       <!-- simpledb access key id -->
                       <config-property name="AccessKey">xxx</config-property>
                       
-                      <!-- simpledb secret access key -->
-                      <config-property name="SecretAccessKey">xxx</config-property>
+                      <!-- simpledb secret key -->
+                      <config-property name="SecretKey">xxx</config-property>
                       
                 </connection-definition>
             </connection-definitions>

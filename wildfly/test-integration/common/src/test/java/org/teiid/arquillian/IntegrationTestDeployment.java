@@ -742,7 +742,7 @@ public class IntegrationTestDeployment {
     public void testCreateSimpleDBSource() throws AdminException {
         Properties p = new Properties();
         p.setProperty("AccessKey", "123");
-        p.setProperty("SecretAccessKey", "abc");
+        p.setProperty("SecretKey", "abc");
         p.setProperty("class-name", "org.teiid.resource.adapter.simpledb.SimpleDBManagedConnectionFactory");
 
         admin.createDataSource("my-simpledb", "simpledb", p);

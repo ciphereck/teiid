@@ -43,8 +43,8 @@
             </config-property>
             
             <config-property>
-               <description>{$display:"Secret Access Key",$description:"",$required:"true"}</description>
-               <config-property-name>SecretAccessKey</config-property-name>
+               <description>{$display:"Secret Key",$description:"",$required:"true"}</description>
+               <config-property-name>SecretKey</config-property-name>
                <config-property-type>java.lang.String</config-property-type>
             </config-property>
             
